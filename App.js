@@ -12,6 +12,11 @@ lucButton.addEventListener('click',()=>{
     
 
     while (count.value > counter ) {
+
+        if (count.value > 8) {
+            window.location.reload(false);
+            break;
+        }
         
         let luckyNumbers = [];
 
@@ -58,6 +63,7 @@ lucButton.addEventListener('click',()=>{
         if (count.value == counter) {
             break;
         }
+      
     }
 });
 
